@@ -1,0 +1,39 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: grid;    
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "h1 team h2"
+    "sup team cal"
+    "sup kar cal"
+    "b1 kar b2";
+    gap: 10px;
+    justify-content: center;
+}
+
+.team-builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    background-color: hsl(0, 0%, 98%);
+    grid-area: team;
+}
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    background-color: hsl(0, 0%, 98%);
+    grid-area: sup;
+}
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    background-color: hsl(0, 0%, 98%);
+    grid-area: kar;
+}
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    background-color: hsl(0, 0%, 98%);
+    grid-area: cal;
+}
